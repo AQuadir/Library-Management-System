@@ -1,3 +1,6 @@
+using LibraryManagementWebAPI;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,20 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<Context>(e =>
+{
+    e.UseSqlServer(builder.Configuration.GetConnectionString("DB"));
+});
+
+builder.Services.AddCors(options =>
+ {
+     options.AddPolicy("myCorsPolicy", builder =>
+     {
+         builder.WithOrigins("http://localhost:4200")
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+     });
+ });
 
 var app = builder.Build();
 
@@ -17,6 +34,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("myCorsPolicy");
 
 app.UseAuthorization();
 

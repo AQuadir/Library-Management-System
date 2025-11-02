@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "LibraryManagementWebAPI.Controllers.LibraryController",
+    "Method": "Register",
+    "RelativePath": "api/Library/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "LibraryManagementWebAPI.Entities.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

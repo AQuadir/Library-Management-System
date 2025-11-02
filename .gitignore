@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/LibraryManagementWebAPI/.vs/LibraryManagementWebAPI/FileContentIndex
+/LibraryManagementWebAPI/.vs/LibraryManagementWebAPI/config/applicationhost.config
+/LibraryManagementWebAPI/.vs/LibraryManagementWebAPI/CopilotIndices/17.14.1231.31060/CodeChunks.db
+/LibraryManagementWebAPI/.vs/LibraryManagementWebAPI/CopilotIndices/17.14.1231.31060/CodeChunks.db-shm
+/LibraryManagementWebAPI/.vs/LibraryManagementWebAPI/CopilotIndices/17.14.1231.31060/CodeChunks.db-wal
+/LibraryManagementWebAPI/.vs/LibraryManagementWebAPI/CopilotIndices/17.14.1231.31060/SemanticSymbols.db-shm
+/LibraryManagementWebAPI/.vs/LibraryManagementWebAPI/DesignTimeBuild/.dtbcache.v2
